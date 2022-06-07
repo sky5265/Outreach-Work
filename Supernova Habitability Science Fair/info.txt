@@ -19,7 +19,8 @@ curve the supernova is.
 	'The average location in the galaxy' could be interpreted to mean: the average distance to the nearest supernova in the galaxy, when 
 supernovae are distributed throughout the galaxy. So the question is-how many supernovae need to go off in the Milky Way for a planet at this 
 distance to be habitable. Potential next step: talk specifically about the Earth's location in the galaxy, and couple it with using a non-uniform PDF 
-of galaxy locations for the supernovae.
+of galaxy locations for the supernovae. Potential next next step: also account for dust extinction within the galaxy accounting for Earth's location 
+in the galaxy and the distribution of SNe locations.
 
 	Habitability can be defined in many different ways, of differing complexities. We should stick with the simplest conception-we want the flux 
 received by this planet to be equal to the stellar flux we get from the Sun. From the Sun, we get a flux of 1361 W/m^2. Potential next step: use a 
@@ -31,19 +32,43 @@ galaxy, you get a supernova flux if 1361 W/m^2?
 
 
 
+To introduce this project, we will have a series of labs that will introduce the background science and CS concepts necessary to carry out 
+this project. These concepts are listed below:
+Each lab will cover ~1 concept. It will start by introducing the concept, and the student can interact with the lab (it will probably be written as a 
+jupyter notebook). Each lab will also be accompanied by a short lecture-a video recording of a human explaining the concept. Each lab will also have a
+'final project'-a (very) short project that shows the student has understood the concept. The student always has the option of finishing this short project 
+and skipping the lab. By design, each lab should take ~3 hrs for a high school student to do. (Not sure if this is too long--I could also see it taking like
+30 minutes to do).
+
+
 
 ==Background Concepts==
 
 =Math/Astro Concepts=
 
-Supernovae
-	Flux and Luminosity
-		Inv square distances
-	Light Curve
+Flux and Luminosity
+	Inv square distances
+	Light Curves
+	Habitable <==> you get 1361 W/m^2
+	Bolometric versus various bands
+
+
+Spectral Energy Distributions
+	Blackbody curves, temperatures
+	Examples of spectra
+	
+Calculating Luminosity and Flux output
+	How to get total flux output from an LC
+	How to get total flux output from SED
+
+SNe
+	What causes SNe?
+	What kinds of SNe are there?
+	What do LCs and SEDs of each SNa type look like
 
 
 
-Distributions
+Stats
 	Uniform Distributions
 	Exponential Distribution
 	Randomly Sampling from a distribution
