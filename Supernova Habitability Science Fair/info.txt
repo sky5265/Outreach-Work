@@ -1,0 +1,51 @@
+This directory will be the work I have for the science fair project I hope to do with some 
+high-school students. The project will be an answer to this question: 
+
+
+	How many supernovae need to go off in the galaxy per unit time for the average location in the galaxy to be habitable?
+
+
+==Implementation==
+
+	Take a number N supernovae going off randomly, with mean time separation every T years. I imagine the explosion time would be sampled from 
+an exponential distribution with time constant T. T will be a free parameter of this fit. Every time a supernova goes off, its location in the 
+galaxy is randomly chosen from a uniform distribution of locations in the galaxy. Potential next step: make this some non-uniform PDF of galaxy 
+locations, favoring star-forming regions or whatever.
+
+	Then, sample from a distribution of light curves for each supernova, and calculate the flux received from that supernova at some given 
+location in the galaxy. Do this for all supernovae going off in the galaxy, accounting for the distance to each supernova, and where along its light 
+curve the supernova is. 
+
+	'The average location in the galaxy' could be interpreted to mean: the average distance to the nearest supernova in the galaxy, when 
+supernovae are distributed throughout the galaxy. So the question is-how many supernovae need to go off in the Milky Way for a planet at this 
+distance to be habitable. Potential next step: talk specifically about the Earth's location in the galaxy, and couple it with using a non-uniform PDF 
+of galaxy locations for the supernovae.
+
+	Habitability can be defined in many different ways, of differing complexities. We should stick with the simplest conception-we want the flux 
+received by this planet to be equal to the stellar flux we get from the Sun. From the Sun, we get a flux of 1361 W/m^2. Potential next step: use a 
+more complex definition of habitability-we could use an atmospheric model for the planet and try to make there be water on the surface. 
+
+
+In short, in the Milky Way galaxy, how many supernovae would have to go off, and how often, such that at the average distance to any supernova in the
+galaxy, you get a supernova flux if 1361 W/m^2?
+
+
+
+
+==Background Concepts==
+
+=Math/Astro Concepts=
+
+Supernovae
+	Flux and Luminosity
+		Inv square distances
+	Light Curve
+
+
+
+Distributions
+	Uniform Distributions
+	Exponential Distribution
+	Randomly Sampling from a distribution
+
+
